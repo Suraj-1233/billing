@@ -79,7 +79,7 @@ const ContextCart = () => {
        
         <div className="card-total">
           <h3>
-            Cart Total : <span>{totalAmount}₹</span>
+            Cart Total : <span>₹{totalAmount}</span>
           </h3>
           <button> ADD NEW ITEMS</button>
           
