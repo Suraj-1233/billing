@@ -15,7 +15,7 @@ const ContextCart = () => {
         <header>
           <div className="continue-shopping">
             { <img src="./images/arrow.png" alt="arrow" className="arrow-icon" /> }
-            <h3>bontinue shopping</h3>
+            <h3>SURAJ KANNUJIYA</h3>
           </div>
 
           <div className="cart-icon">
