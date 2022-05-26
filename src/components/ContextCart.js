@@ -3,6 +3,7 @@ import React, { useContext } from "react";
 import { Scrollbars } from "react-custom-scrollbars-2";
 import Items from "./Items";
 import Items1 from "./Items1";
+import Items2 from "./Items2";
 import { CartContext } from "./Cart";
 
 const ContextCart = () => {
@@ -68,30 +69,31 @@ const ContextCart = () => {
               {item.map((curItem) => {
                 return <Items key={curItem.id} {...curItem} />;
               })}
+              <Items2 price={totalAmount}>
+             </Items2>
             </Scrollbars>
+           
+       
           </div>
+          
+        
+         
         </div>
        
+        <div className="card-total">
           
+          <button> ADD NEW ITEMS</button>
+          
+          
+          
+
+        </div>
           
         
        
        
-        <div className="card-total">
-          <h3>
-            Cart Total : <span>₹{totalAmount}</span>
-          </h3>
-          <button> ADD NEW ITEMS</button>
-          
-          
-          <button className="clear-cart">
-                  PAY
-            </button>
-          <button className="clear-cart" onClick={clearCart}>
-            Clear Cart
-          </button>
-
-        </div>
+       
+        
       </section>
     </>
   );
